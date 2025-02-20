@@ -11,6 +11,7 @@ import { Typeahead } from "react-bootstrap-typeahead";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import { getAProduct } from "../features/products/productSlilce";
 import { getUserCart } from "../features/user/userSlice";
+import multits_logo from "../images/multits_logo.jpg"
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -71,8 +72,8 @@ const Header = () => {
             <div className="col-6">
               <p className="text-end text-white mb-0">
                 Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
+                <a className="text-white" href="tel:+92 3335752517">
+                  +92 3335752517
                 </a>
               </p>
             </div>
@@ -83,11 +84,9 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2">
-              <h2>
-                <Link className="text-white" to="/ ">
-                  Multi E-commerce
-                </Link>
-              </h2>
+              
+              <img src={multits_logo} alt="compare" style={{ borderRadius: "50%", width: "80px" }} />
+
             </div>
             <div className="col-5">
               <div className="input-group">
